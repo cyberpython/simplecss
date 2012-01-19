@@ -1,0 +1,272 @@
+/*The MIT License (MIT)
+Copyright (c) 2012 Georgios Migdos <cyberpython@gmail.com>
+
+Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.*/
+
+::-webkit-scrollbar {
+    width: 8px;
+    height: 8px;
+}
+ 
+::-webkit-scrollbar-track {
+    background: #fff;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #ccc;
+    border-radius: 10px; 
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #aaa;
+}
+
+html {
+    background-color: #fff;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    background-color: #fff;
+	font-size: 75%;
+	color: #111;
+	max-width: 760px;
+	margin: 0 auto;
+	padding: 5em;
+	font-family: 'DejaVu Serif', serif;
+}
+
+@media screen and (max-width: 800px) {
+    body {
+	    margin: 0 20px;
+    }
+}
+
+
+@media screen and (max-width: 600px){
+    body {
+	    margin: 0 20px;
+	    min-width: 350px;
+    }
+    
+    figure, figure.align-left, figure.align-right{
+        display: block;
+        width: 100%;
+        height: auto;
+        margin: 20px 0;
+    }
+}
+
+figure, aside{
+    padding: 0;
+    margin: 0;
+    display: block;
+    margin: 1em auto 3em;
+    max-width: 100%;
+}
+
+figcaption{
+    color: #333;
+    font-family: 'DejaVu Sans', sans-serif;
+    font-size: 1.1em;
+    line-height: 1.3em;
+    text-align: left;
+    font-style: italic;
+}
+
+img{
+    width: 100%;
+    height: auto;
+}
+
+.align-left{
+    display: inline;
+    float: left;
+    width: 33%;
+    margin-right: 3em;
+    margin-top: 0.5em;
+    margin-bottom: 1em;
+}
+
+.align-right{
+    display: inline;
+    float: right;
+    width: 33%;
+    margin-left: 3em;
+    margin-top: 0.5em;
+    margin-bottom: 1em;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	font-weight: normal;
+	font-family: 'DejaVu Serif', serif;
+	letter-spacing: -1px;
+	margin-bottom: 10px;
+	text-shadow: 2px 2px 1px #ccc;
+}
+
+h1 {font-size: 5em;}
+h2 {font-size: 3.5em;}
+h3 {font-size: 2.5em; font-style: italic;}
+h4 {font-size: 2.3em; font-style: italic;}
+h5 {font-size: 2em; font-style: italic;}
+h6 {font-size: 1.8em; font-style: italic;}
+
+p, caption, td, th, dd, dt, pre, code, address, ul, ol, blockquote, cite {
+	font-size: 1.5em;
+	line-height: 1.8em;
+	margin-bottom: 3em;
+}
+
+a{
+    text-decoration: none;
+    border-bottom: 1px dotted;
+}
+
+p{
+    font-family: 'DejaVu Sans', sans-serif;
+    font-size: 1.3em;
+    text-align: justify;
+}
+
+hr {
+	margin-bottom: 1em;
+	border: 0;
+	border-bottom: 1px solid #ccc;
+}
+
+a:link {color: #111; text-decoration: none; border-bottom: 1px dotted;} 
+a:visited {color: #111; text-decoration: none; border-bottom: 1px dotted;}
+a:hover,a:focus {color: #004CB0; text-decoration: none; border-bottom: 1px dotted;}
+a:active {}
+
+ul ul, ol ol, ul ol, ol ul{
+    font-size: 0.8em;
+    margin: 1em;
+}
+
+dt {
+	font-weight: bold;
+}
+
+dd {
+	font-style: italic;
+	padding-left: 1em;
+	margin: 0 0 1em 0;
+}
+
+table {
+	border-color: #b3b3b3;
+	border-width: 1px;
+	border-style: solid;
+	border-right-style: none;
+	border-bottom-width: 4px;
+	border-collapse: collapse;
+    width: 100%;
+}
+
+th {
+	background-color: #ccc;
+	border-bottom-color: #aaa;
+	border-bottom-width: 1px;
+	border-bottom-style: solid;
+	border-right-color: #aaa;
+	border-right-width: 1px;
+	border-right-style: solid;
+	padding: 0.2em 1em;
+}
+
+td {
+    background-color: #fcfcfc;
+	border-bottom-color: #ccc;
+	border-bottom-width: 1px;
+	border-bottom-style: solid;
+	border-right-color: #ccc;
+	border-right-width: 1px;
+	border-right-style: solid;
+
+	padding: 0.2em 1em;
+}
+
+tr.even td {
+    background-color: #f4f4f4;
+}
+
+caption {	
+	font-style: italic;
+	text-align: left;
+}
+
+blockquote {
+	color: #333;
+	font-style: italic;
+	margin: 1em;
+    margin-top: 1.5em;
+    margin-bottom: 1.5em;
+    margin-left: 3em;
+    padding-left: 2em;
+    border-left: 3px solid #ccc;
+}
+
+blockquote p{
+    font-size: 0.75em;
+}
+
+blockquote cite{
+    display: block;
+    text-align: right;
+    font-size: 0.8em;
+    padding-right: 3em;
+    color: #000;
+}
+
+blockquote cite:before{
+    content: '- ';
+}
+
+pre,code,.code {
+	background-color: #fff;
+	color: #333;
+	display: block;
+	margin: 0 0 1em 0;
+}
+
+pre,code,.code{
+    font-family: "DejaVu Sans Mono", monospace;
+    font-size: 1.5em;
+    overflow-x: auto;
+}
+
+code,.code {
+    background-color: #f1f1f1;
+    white-space: pre;
+    font-size: 1.3em;
+    border-color: #aaa;
+	border-width: 1px;
+	border-style: solid;
+	padding: 1em;
+	border-left:35px solid #aaa;
+	max-height: 30em;
+}
+
+@media print {
+    pre,code,.code{
+        overflow-x: visible;
+        white-space: pre-wrap;
+        max-height: none;
+    }
+}
+
+abbr, acronym{cursor: help;}
+
+del {color: #999;}
+
+ins {font-style: italic;}
+
+small{font-size: 0.75em;}
+
